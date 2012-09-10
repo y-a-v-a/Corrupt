@@ -50,7 +50,7 @@
 		$img = "images/$file";
 
 		// skip directories
-		if(is_dir($img)) continue;
+		if(is_dir($img) || !preg_match('/\.jpg/',$img)) continue;
 
 		// store create time
 		$images[$img] = filectime($img);
