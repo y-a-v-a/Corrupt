@@ -21,9 +21,9 @@
 	}
 
 	function scramble($content, $size) {
-		$sStart = 10;
+		$sStart = 100;
 		$sEnd = $size-1;
-		$nReplacements = rand(1, 30);
+		$nReplacements = rand(10, 40);
 
 		for($i = 0; $i < $nReplacements; $i++) {
 			$PosA = rand($sStart, $sEnd);
